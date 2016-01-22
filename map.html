@@ -1,0 +1,117 @@
+<!---
+ 
+ //////// ณัฐนนท์ ดวงสูงเนิน , อิทธิพร ชัยยะ //////////
+ /////  Designed by @NattanonDSN  ///////
+ Copyright © 2014 . All rights reserved.
+ -- Designed and Coded by --
+ @NattanonDSN @Firstit
+ 
+ 
+ 
+ --->
+
+<!DOCTYPE html>
+<html>
+    
+            <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="viewport" content="width=device-width">
+            <title>ASEAN Geo</title>
+            <link rel="shortcut icon" href="http://www.stouaward.com/team1_4/fav.ico" />
+            <!----- Facebook Opengraph API ------>
+            <meta property="og:title" content="ASEAN Geo" />
+            <meta property="og:description" content="One vision, One identity, One community. The Association of Southeast Asian Nations, or ASEAN, was established on 8 August 1967 in Bangkok, Thailand, with the signing of the ASEAN Declaration (Bangkok Declaration) by the Founding Fathers of ASEAN, namely Indonesia, Malaysia, Philippines, Singapore and Thailand.
+            Brunei Darussalam then joined on 7 January 1984, Viet Nam on 28 July 1995, Lao PDR and Myanmar on 23 July 1997, and Cambodia on 30 April 1999, making up what is today the ten Member States of ASEAN. " />
+            
+            <meta property="og:image" content="http://www.stouaward.com/team1_4/images/og.png" />
+            <link rel="stylesheet" href="css/style.css" media="screen">
+            <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+            <!---- iOS and OS X Yosemite Preview Icon --->
+            <link rel="apple-touch-icon" href="images/ios_osx.png">
+                
+            <script src="js/jquery-1.10.2.min.js"></script>
+                    
+                    
+    </head>
+    <body>
+        
+        
+        
+        <div class="wrapper">
+            
+            <div class="content">
+                
+                <div class="projects-feed auto-greyscale">
+                    <div class="projects-feed-inner clearfix">
+                        
+                        <div id="map_canvas" style="width:2048px; height:800px;"></div>
+                        
+                        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+                        <script>
+                            window.onload = function() {
+                                initialize();
+                            }
+                        
+                        function initialize() {
+                            var myLatlng = new google.maps.LatLng(9.3419169876, 111.60793614352);
+                            
+                            var myOptions = {
+                                zoom: 4,
+                                center: myLatlng,
+                                mapTypeId: google.maps.MapTypeId.TERRAIN
+                            }
+                            
+                            var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+                            
+                            var infowindow = new google.maps.InfoWindow({
+                                                                        content: ""
+                                                                        });
+                                                                        
+                                                                        var marker = new google.maps.Marker({
+                                                                                                            position: myLatlng,
+                                                                                                            map: map,
+                                                                                                            title: ""
+                                                                                                            });
+                                                                                                            
+                                                                                                            google.maps.event.addListener(marker, 'click', function() {
+                                                                                                                                          infowindow.open(map,marker);
+                                                                                                                                          });
+                        }
+                        </script>
+                        
+                    </div><!--END .projects-feed-inner-->		
+                </div><!--END .projects-feed-->
+                
+            </div><!--END .content-->
+            
+            <footer class="footer header">
+                
+                <div class="logo">
+                    <a href="index.html" title="AEC LOGO"><img src="images/logo.png" alt=""></a>
+                </div>	
+                
+                
+                <div class="navigation">
+                    <ul>
+                        <li><a href="index.html">หน้าแรก</a></li>
+                        <li><a href="caulture.html">วัฒนธรรม</a></li>
+                        <li><a href="geo.html">ภูมิประเทศ</a></li>
+                        <li><a href="politics.html">การปกครอง</a></li>
+                        <li><a href="travell.html">การท่องเที่ยว</a></li>
+                        <li><a href="co-op.html">ความร่วมมือ</a></li>
+                        <li><a href="team.html">ผู้จัดทำ</a></li>
+                    </ul>
+                    
+                    
+                    
+                    <!--END .wrapper-->
+                </div>
+                
+                
+                <script src="js/jquery.fitvids.js"></script>
+                <script src="js/jquery.nivo.slider.pack.js"></script>
+                <script src="js/jquery.jplayer.min.js"></script>
+                <script src="js/main.js"></script>
+                
+    </body>
+</html>

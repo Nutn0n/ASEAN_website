@@ -1,0 +1,88 @@
+/*=================================*/
+/* Reset & Clearfix Styles
+/*=================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } :focus { outline: 0; } ins { text-decoration: none; } del { text-decoration: line-through; } table { border-collapse: collapse; border-spacing: 0; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } .clearfix { display: inline-block; }
+
+/* Hide from IE Mac \*/ .clearfix { display: block; } /* End hide from IE Mac */ .none { display: none; } /* End Clearfix */
+
+/*=================================*/
+/* Main Styles
+/*=================================*/
+
+body {
+	background:url(../images/bg_coming.jpg) center top;
+	color: #5e5e5e;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype" , "dejavu sans", "helvetica neue", arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.7em;
+	word-wrap: break-word;
+	overflow-x: hidden;
+	-webkit-text-size-adjust: none;
+}
+
+a, a:visited {
+	color: #3699f0;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #297ac0;
+	text-decoration: none;
+}
+p { margin-bottom: 20px; }
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: bottom;
+}
+.left { float:left; }
+.right { float:right; }
+
+/* Let's get this party started */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+	background:#ededed;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbcbcb;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+
+/* PAGE */
+.text-page {
+	font-size:48px;
+	color:#ffffff;
+	font-weight:bold;
+	text-align:center;
+	margin-top:100px;
+	line-height:1px;
+}
+.text-page2 {
+	color:#aeb0b1;
+	font-size:30px;
+	text-align:center;
+	font-weight:normal;
+	margin-top:47px;
+}
+.center-box {
+	text-align:center;
+	margin:auto;
+	margin-top:20px;
+	width:640px;
+	line-height:30px;
+	font-size:18px;
+	color:#aeb0b1;
+}
+#note {
+	text-align:center;
+	color:#aeb0b1;
+}
+@media only screen and (max-width: 100px) {
+.center-box { width:auto;}
+}
